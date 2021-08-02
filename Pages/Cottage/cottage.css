@@ -1,0 +1,32 @@
+/* VARIABLE COLORS */
+:root {
+  --lightest: #ffffff;
+  --color1: #7aa99e;
+  --color2: #c58e53;
+  --color3: #769643;
+  --color4: #744621;
+  --darkest: #000000;
+}
+/* RESET + BACKGROUND */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color1);
+}
+
+/* STYLES FOR TEMP IMG VERSION */
+#nav {
+  background: white;
+}
+#home {
+  margin: 10px;
+  width: 30px;
+}
+
+.container img {
+  margin: none;
+  width: 100%;
+}

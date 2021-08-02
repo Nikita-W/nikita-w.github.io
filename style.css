@@ -95,6 +95,14 @@ a {
   height: 100vh;
 }
 
+#profile-img {
+  margin: 30px auto;
+  width: 30%;
+  max-width: 300px;
+  border: solid 10px white;
+  border-radius: 5px;
+}
+
 #welcome-section p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.5em;

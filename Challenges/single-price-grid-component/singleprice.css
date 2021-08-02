@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+
+/* VARIABLE COLORS */
+:root {
+  --Lime: hsl(71, 73%, 54%);
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyanlite: hsla(179, 62%, 43%, 0.836);
+  --Blue: hsl(204, 43%, 93%);
+  --Grey: hsl(218, 22%, 67%);
+}
+
+/* RESET + BACKGROUND */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--Blue);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+/* NAVIGATION BAR */
+#nav {
+  background: var(--Grey);
+}
+#home {
+  margin: 10px;
+  width: 30px;
+}
+
+/* CONTAINER TIME */
+.container {
+  background: white;
+  border-radius: 5px;
+  margin: 50px auto;
+  overflow: hidden;
+  width: 375px;
+  line-height: 1.4;
+}
+
+.heading {
+  padding-bottom: 25px;
+  font-size: 22px;
+}
+
+/* SPECIFIC STYLE CLASSES */
+.doubleline {
+  line-height: 2;
+}
+
+.bigtxt {
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+.medtxt {
+  font-size: 18px;
+  margin-top: 0.5rem;
+}
+
+.heavy {
+  font-weight: 700;
+}
+
+.lite {
+  font-weight: 200;
+}
+
+.blue {
+  color: var(--Blue);
+}
+
+.cyan {
+  color: var(--Cyan);
+}
+
+.lime {
+  color: var(--Lime);
+}
+.grey {
+  color: var(--Grey);
+}
+
+.margintop {
+  margin-top: 2rem;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+/* SECTIONS */
+.section {
+  padding: 30px;
+}
+
+#second {
+  background: var(--Cyan);
+}
+
+.button {
+  background: var(--Lime);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+  padding: 18px;
+  width: 100%;
+  box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+#third {
+  background: var(--Cyanlite);
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    grid-template-areas:
+      "first first"
+      "second third";
+    width: 80%;
+  }
+  #first {
+    grid-area: first;
+  }
+
+  #second {
+    grid-area: second;
+  }
+
+  #third {
+    grid-area: third;
+  }
+}
